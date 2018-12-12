@@ -18,7 +18,7 @@ import com.goldze.mvvmhabit.ui.base.TitleViewModel;
 
 import java.util.Calendar;
 
-import me.goldze.mvvmhabit.base.BaseFragment;
+import me.goldze.mvvmhabit.base.BaseRXFragment;
 import me.goldze.mvvmhabit.utils.MaterialDialogUtils;
 
 /**
@@ -26,7 +26,7 @@ import me.goldze.mvvmhabit.utils.MaterialDialogUtils;
  * 表单提交/编辑界面
  */
 
-public class FormFragment extends BaseFragment<FragmentFormBinding, FormViewModel> {
+public class FormRXFragment extends BaseRXFragment<FragmentFormBinding, FormViewModel> {
 
     private FormEntity entity = new FormEntity();
 

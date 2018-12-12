@@ -18,16 +18,16 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".ui.login.LoginActivity">
+        <activity android:name=".ui.login.LoginRXActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.main.DemoActivity"></activity>
-        <activity android:name=".ui.tab_bar.activity.TabBarActivity"></activity>
-        <activity android:name=".ui.viewpager.activity.ViewPagerActivity"></activity>
+        <activity android:name=".ui.main.DemoRXActivity"></activity>
+        <activity android:name=".ui.tab_bar.activity.TabBarRXActivity"></activity>
+        <activity android:name=".ui.viewpager.activity.ViewPagerRXActivity"></activity>
     </application>
 
 </manifest>

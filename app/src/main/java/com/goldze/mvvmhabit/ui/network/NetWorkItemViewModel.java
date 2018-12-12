@@ -7,7 +7,7 @@ import android.support.v4.content.ContextCompat;
 
 import com.goldze.mvvmhabit.R;
 import com.goldze.mvvmhabit.entity.DemoEntity;
-import com.goldze.mvvmhabit.ui.network.detail.DetailFragment;
+import com.goldze.mvvmhabit.ui.network.detail.DetailRXFragment;
 
 import me.goldze.mvvmhabit.base.ItemViewModel;
 import me.goldze.mvvmhabit.binding.command.BindingAction;
@@ -40,7 +40,7 @@ public class NetWorkItemViewModel extends ItemViewModel<NetWorkViewModel> {
                 //跳转到详情界面,传入条目的实体对象
                 Bundle mBundle = new Bundle();
                 mBundle.putParcelable("entity", entity);
-                viewModel.startContainerActivity(DetailFragment.class.getCanonicalName(), mBundle);
+                viewModel.startContainerActivity(DetailRXFragment.class.getCanonicalName(), mBundle);
             }
         }
     });

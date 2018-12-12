@@ -19,7 +19,7 @@ import me.goldze.mvvmhabit.http.interceptor.BaseInterceptor;
 import me.goldze.mvvmhabit.http.interceptor.CacheInterceptor;
 import me.goldze.mvvmhabit.http.interceptor.logging.Level;
 import me.goldze.mvvmhabit.http.interceptor.logging.LoggingInterceptor;
-import me.goldze.mvvmhabit.utils.KLog;
+import me.goldze.mvvmhabit.log.KLog;
 import me.goldze.mvvmhabit.utils.Utils;
 import okhttp3.Cache;
 import okhttp3.ConnectionPool;

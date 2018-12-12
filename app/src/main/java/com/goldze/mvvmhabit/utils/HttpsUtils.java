@@ -35,8 +35,6 @@ import javax.net.ssl.TrustManager;
 import javax.net.ssl.TrustManagerFactory;
 import javax.net.ssl.X509TrustManager;
 
-import me.goldze.mvvmhabit.utils.KLog;
-
 
 public class HttpsUtils {
 

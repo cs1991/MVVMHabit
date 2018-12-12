@@ -7,10 +7,10 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 
 import com.goldze.mvvmhabit.entity.FormEntity;
-import com.goldze.mvvmhabit.ui.form.FormFragment;
-import com.goldze.mvvmhabit.ui.network.NetWorkFragment;
-import com.goldze.mvvmhabit.ui.tab_bar.activity.TabBarActivity;
-import com.goldze.mvvmhabit.ui.viewpager.activity.ViewPagerActivity;
+import com.goldze.mvvmhabit.ui.form.FormRXFragment;
+import com.goldze.mvvmhabit.ui.network.NetWorkRXFragment;
+import com.goldze.mvvmhabit.ui.tab_bar.activity.TabBarRXActivity;
+import com.goldze.mvvmhabit.ui.viewpager.activity.ViewPagerRXActivity;
 
 import me.goldze.mvvmhabit.base.BaseViewModel;
 import me.goldze.mvvmhabit.binding.command.BindingAction;
@@ -34,28 +34,28 @@ public class DemoViewModel extends BaseViewModel {
     public BindingCommand netWorkClick = new BindingCommand(new BindingAction() {
         @Override
         public void call() {
-            startContainerActivity(NetWorkFragment.class.getCanonicalName());
+            startContainerActivity(NetWorkRXFragment.class.getCanonicalName());
         }
     });
     //进入TabBarActivity
     public BindingCommand startTabBarClick = new BindingCommand(new BindingAction() {
         @Override
         public void call() {
-            startActivity(TabBarActivity.class);
+            startActivity(TabBarRXActivity.class);
         }
     });
     //ViewPager绑定
     public BindingCommand viewPagerBindingClick = new BindingCommand(new BindingAction() {
         @Override
         public void call() {
-            startActivity(ViewPagerActivity.class);
+            startActivity(ViewPagerRXActivity.class);
         }
     });
     //表单提交点击事件
     public BindingCommand formSbmClick = new BindingCommand(new BindingAction() {
         @Override
         public void call() {
-            startContainerActivity(FormFragment.class.getCanonicalName());
+            startContainerActivity(FormRXFragment.class.getCanonicalName());
         }
     });
     //表单修改点击事件
@@ -72,7 +72,7 @@ public class DemoViewModel extends BaseViewModel {
             //传入实体数据
             Bundle mBundle = new Bundle();
             mBundle.putParcelable("entity", entity);
-            startContainerActivity(FormFragment.class.getCanonicalName(), mBundle);
+            startContainerActivity(FormRXFragment.class.getCanonicalName(), mBundle);
         }
     });
     //权限申请

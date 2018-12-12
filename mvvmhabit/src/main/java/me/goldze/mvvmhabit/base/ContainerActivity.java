@@ -53,7 +53,7 @@ public class ContainerActivity extends RxAppCompatActivity {
                 throw new IllegalArgumentException("can not find page fragmentName");
             }
             Class<?> fragmentClass = Class.forName(fragmentName);
-            BaseFragment fragment = (BaseFragment) fragmentClass.newInstance();
+            BaseRXFragment fragment = (BaseRXFragment) fragmentClass.newInstance();
 
             Bundle args = data.getBundleExtra(BUNDLE);
             if (args != null) {
@@ -76,8 +76,8 @@ public class ContainerActivity extends RxAppCompatActivity {
     @Override
     public void onBackPressed() {
         Fragment fragment = getSupportFragmentManager().findFragmentById(mianLayout.getId());
-        if (fragment instanceof BaseFragment) {
-            if (!((BaseFragment) fragment).isBackPressed()) {
+        if (fragment instanceof BaseRXFragment) {
+            if (!((BaseRXFragment) fragment).isBackPressed()) {
                 super.onBackPressed();
             }
         } else {

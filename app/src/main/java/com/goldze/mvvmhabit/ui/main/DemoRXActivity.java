@@ -3,7 +3,6 @@ package com.goldze.mvvmhabit.ui.main;
 import android.Manifest;
 import android.app.ProgressDialog;
 import android.arch.lifecycle.Observer;
-import android.content.Context;
 import android.databinding.Observable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -14,7 +13,7 @@ import com.goldze.mvvmhabit.databinding.ActivityDemoBinding;
 import com.tbruyelle.rxpermissions2.RxPermissions;
 
 import io.reactivex.functions.Consumer;
-import me.goldze.mvvmhabit.base.BaseActivity;
+import me.goldze.mvvmhabit.base.BaseRXActivity;
 import me.goldze.mvvmhabit.http.DownLoadManager;
 import me.goldze.mvvmhabit.http.download.ProgressCallBack;
 import me.goldze.mvvmhabit.utils.ToastUtils;
@@ -24,7 +23,7 @@ import okhttp3.ResponseBody;
  * Created by goldze on 2017/7/17.
  */
 
-public class DemoActivity extends BaseActivity<ActivityDemoBinding, DemoViewModel> {
+public class DemoRXActivity extends BaseRXActivity<ActivityDemoBinding, DemoViewModel> {
 
     @Override
     public int initContentView(Bundle savedInstanceState) {
@@ -59,7 +58,7 @@ public class DemoActivity extends BaseActivity<ActivityDemoBinding, DemoViewMode
      */
     private void requestCameraPermissions() {
         //请求打开相机权限
-        RxPermissions rxPermissions = new RxPermissions(DemoActivity.this);
+        RxPermissions rxPermissions = new RxPermissions(DemoRXActivity.this);
         rxPermissions.request(Manifest.permission.CAMERA)
                 .subscribe(new Consumer<Boolean>() {
                     @Override

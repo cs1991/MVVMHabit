@@ -8,7 +8,7 @@ import android.support.annotation.NonNull;
 import android.text.TextUtils;
 import android.view.View;
 
-import com.goldze.mvvmhabit.ui.main.DemoActivity;
+import com.goldze.mvvmhabit.ui.main.DemoRXActivity;
 
 import java.util.concurrent.TimeUnit;
 
@@ -107,7 +107,7 @@ public class LoginViewModel extends BaseViewModel {
                     public void accept(Object o) throws Exception {
                         dismissDialog();
                         //进入DemoActivity页面
-                        startActivity(DemoActivity.class);
+                        startActivity(DemoRXActivity.class);
                         //关闭页面
                         finish();
                     }

@@ -14,7 +14,7 @@ import com.goldze.mvvmhabit.BR;
 import com.goldze.mvvmhabit.R;
 import com.goldze.mvvmhabit.databinding.FragmentNetworkBinding;
 
-import me.goldze.mvvmhabit.base.BaseFragment;
+import me.goldze.mvvmhabit.base.BaseRXFragment;
 import me.goldze.mvvmhabit.utils.MaterialDialogUtils;
 import me.goldze.mvvmhabit.utils.ToastUtils;
 
@@ -23,7 +23,7 @@ import me.goldze.mvvmhabit.utils.ToastUtils;
  * 网络请求列表界面
  */
 
-public class NetWorkFragment extends BaseFragment<FragmentNetworkBinding, NetWorkViewModel> {
+public class NetWorkRXFragment extends BaseRXFragment<FragmentNetworkBinding, NetWorkViewModel> {
     @Override
     public int initContentView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return R.layout.fragment_network;

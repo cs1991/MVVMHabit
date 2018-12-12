@@ -134,8 +134,8 @@
 #----------------------------------------------------------------------------
 
 #---------------------------------4.反射相关的类和方法-----------------------
--keep public class * extends me.goldze.mvvmhabit.base.BaseActivity{ *; }
--keep public class * extends me.goldze.mvvmhabit.base.BaseFragment{ *; }
+-keep public class * extends me.goldze.mvvmhabit.base.BaseRXActivity{ *; }
+-keep public class * extends me.goldze.mvvmhabit.base.BaseRXFragment{ *; }
 -keep public class * extends me.goldze.mvvmhabit.binding.command.BindingCommand{ *; }
 -keep public class * extends me.goldze.mvvmhabit.binding.command.ResponseCommand{ *; }
 

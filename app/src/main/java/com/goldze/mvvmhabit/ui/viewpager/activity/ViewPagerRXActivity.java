@@ -8,7 +8,7 @@ import com.goldze.mvvmhabit.R;
 import com.goldze.mvvmhabit.databinding.FragmentViewpagerBinding;
 import com.goldze.mvvmhabit.ui.viewpager.vm.ViewPagerViewModel;
 
-import me.goldze.mvvmhabit.base.BaseActivity;
+import me.goldze.mvvmhabit.base.BaseRXActivity;
 
 /**
  * ViewPager绑定的例子, 更多绑定方式，请参考 https://github.com/evant/binding-collection-adapter
@@ -16,7 +16,7 @@ import me.goldze.mvvmhabit.base.BaseActivity;
  * Created by goldze on 2018/7/18.
  */
 
-public class ViewPagerActivity extends BaseActivity<FragmentViewpagerBinding, ViewPagerViewModel> {
+public class ViewPagerRXActivity extends BaseRXActivity<FragmentViewpagerBinding, ViewPagerViewModel> {
 
     @Override
     public int initContentView(Bundle savedInstanceState) {

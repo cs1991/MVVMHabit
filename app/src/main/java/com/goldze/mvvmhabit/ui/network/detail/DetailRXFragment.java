@@ -9,14 +9,14 @@ import com.goldze.mvvmhabit.R;
 import com.goldze.mvvmhabit.databinding.FragmentDetailBinding;
 import com.goldze.mvvmhabit.entity.DemoEntity;
 
-import me.goldze.mvvmhabit.base.BaseFragment;
+import me.goldze.mvvmhabit.base.BaseRXFragment;
 
 /**
  * Created by goldze on 2017/7/17.
  * 详情界面
  */
 
-public class DetailFragment extends BaseFragment<FragmentDetailBinding, DetailViewModel> {
+public class DetailRXFragment extends BaseRXFragment<FragmentDetailBinding, DetailViewModel> {
 
     private DemoEntity.ItemsEntity entity;
 

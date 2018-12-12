@@ -10,12 +10,12 @@ import com.goldze.mvvmhabit.BR;
 import com.goldze.mvvmhabit.R;
 import com.goldze.mvvmhabit.databinding.ActivityLoginBinding;
 
-import me.goldze.mvvmhabit.base.BaseActivity;
+import me.goldze.mvvmhabit.base.BaseRXActivity;
 
 /**
  * 一个MVVM模式的登陆界面
  */
-public class LoginActivity extends BaseActivity<ActivityLoginBinding, LoginViewModel> {
+public class LoginRXActivity extends BaseRXActivity<ActivityLoginBinding, LoginViewModel> {
     //ActivityLoginBinding类是databinding框架自定生成的,对应activity_login.xml
     @Override
     public int initContentView(Bundle savedInstanceState) {
